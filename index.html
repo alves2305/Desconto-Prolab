@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento de Exames</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digite o valor total dos exames</h1>
+        <input type="number" id="valorTotal">
+        
+        <h1>Digite o valor a ser pago em dinheiro</h1>
+        <input type="number" id="valorDinheiro">
+        
+        <h1>Selecione a forma de pagamento</h1>
+        <select id="formaPagamento">
+            <option value="20">1x a 2x (ou débito) - 20%</option>
+            <option value="10">3x a 4x - 10%</option>
+        </select>
+        
+        <input type="button" onclick="conferir()" value="Conferir">
+
+        <h1 id="resul"></h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
